@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="rushicalci.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+      crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<style>
+   .button
+   {
+    margin-left: 25px;
+    border: solid black;
+    width: 25px;
+    justify-content: center;
+    align-items: center;box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
+    border: black solid 2px;
+
+
+   }
+   .resultwindow {
+    height:10vh;
+    width: 50vh;
+    font-size: 24px;
+   }
+
+</style>
+
+</head>
+<body>
+    <div class="container-fluid bg-primary justify-content-center row align-items-center " style="height:100vh;background: url(math.webp);background-repeat: no-repeat;background-size: cover;" >
+        <!--calculator starts-->
+         <div class="bg-light rounded flex-column" style="height:50vh;width: 50vh;"> 
+                <div class="bg-success resultwindow "  id="result"></div>
+                
+            <div class="row mt-5 ">
+
+                <div class="button d-flex" onclick="add(1)"> 1</div>
+                <div class="button d-flex" onclick="add(2)"> 2</div>
+                <div class="button d-flex" onclick="add(3)"> 3</div>
+                <div class="button d-flex" onclick="add(4)"> 4</div>
+                <div class="button d-flex" onclick="add('+')"> +</div>  
+                <div class="button d-flex" onclick="add('-')"> -</div>
+
+            </div>
+            <div class="row mt-5">
+
+                <div class="button d-flex" onclick="add(5)"> 5</div>
+                <div class="button d-flex" onclick="add(6)"> 6</div>
+                <div class="button d-flex" onclick="add(7)"> 7</div>
+                <div class="button d-flex" onclick="add(8)"> 8</div>
+                <div class="button d-flex" onclick="add('*')"> *</div>
+                <div class="button d-flex equalsto" onclick="finalresult()"> =</div>
+
+            </div>
+            <div class="row mt-5">
+                <div class="button d-flex" onclick="add(9)"> 9</div>
+                <div class="button d-flex" onclick="add(0)" style="width: 120px;"> 0</div>
+                <div class="button d-flex" onclick="add('/')"> /</div>
+                <div class="button d-flex" onclick="clr()"> clr</div>
+
+            </div>
+          </div>
+      
+    
+    
+    </div>
+ 
+</body>
+</html>

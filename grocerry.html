@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grocery</title>
+
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+
+<script src="grocery.js"></script>
+</head>
+<body>
+  <div class="container-fluid bg-light align-items-center justify-content-center d-flex " style="height: 100vh;">
+      <div class="flex-column bg-info d-flex justify-content-center align-items-center" style="height:500px;width: 350px;" >
+      <h4  class="mt-5">ADD GROCERY ITEMS</h4>
+      <input type="text" class="mt-5" id="inputid1" >
+      <div class="mt-5" ><button onclick="submit()">SUMBIT HERE</button></div>
+      <div class="bg-success mt-5 align-items-center" style="height:250px">
+              <h4 class="mt-0 ml-5 mr-5 ">GROCERY ITEMS</h4>
+              <button onclick="clr()"> CLEAR</button>
+              <div id="gbox" style="background:whitesmoke;">
+                <!-- Sample Reference gbox -->
+                <div
+                  id="refgrocery"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    visibility: hidden;
+                  "
+                >
+                  <div>Sample Reference grocery</div>
+                  <button onclick="deletegrocery(this)">Delete</button>
+                </div>
+                
+               
+    </div>  
+  
+  </div >  
+  
+  
+  
+  
+   </div>  
+</body>
+</html>
